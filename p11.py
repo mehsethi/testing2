@@ -1,6 +1,9 @@
+
+
 from subprocess import Popen, PIPE
 import os
 import time
+import pexpect
 files=open("test99.txt","w")
 filter_in=Popen(['awk', '{print $1,$3,$4}'] , stdin=PIPE , stdout=files).stdin
 p=Popen(['ps','-aux'],stdin=PIPE,stdout=filter_in)
