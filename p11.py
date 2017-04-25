@@ -9,9 +9,7 @@ print ret_code
 stdout,stderr=p.communicate()
 print stdout
 print stderr
-#time.sleep(2)
-#files.seek(0,0)
-#files.close()
+
 os.fsync(files)
 files.flush()
 files.close()
