@@ -17,7 +17,7 @@ os.fsync(files)
 files.flush()
 files.close()
 fi=open("test99.txt","r")
-#open(files,"r")
+
 for line in fi.readlines():
 	print line
 #fi.readlines()
